@@ -10,7 +10,16 @@
   "categories": [
     {
       "id": 1,
-      "name": "Mecanique"
+      "name": "peugeot 206 hdi",
+      "prix": "5500 €",
+      "description": "Véhicule avec courroie de distribution faite à 80000km",
+      "année d'immatriculation": "janvier 2010",
+      "cover": "./FrontEnd/src/assets/img/moteur_1.jpg",
+      "pictures": [
+        "./FrontEnd/src/assets/img/moteur_2.jpg",
+        "./FrontEnd/src/assets/img/moteur_3.jpg",
+        "./FrontEnd/src/assets/img/moteur_4.jpg"
+      ]
     },
     {
       "id": 2,
@@ -154,6 +163,5 @@
         "name": "Montage pneus"
       }
     }
-    
   ]
 }
