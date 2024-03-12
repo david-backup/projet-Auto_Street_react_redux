@@ -1,0 +1,24 @@
+/********** font montserrat **********/
+@mixin montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/********** font poppins **********/
+@mixin poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/********** transition 500ms ease in out **********/
+@mixin transition500 {
+  transition: all 500ms ease-in-out;
+}
+
+/********** transition 350ms ease **********/
+@mixin transition350 {
+  transition: all 350ms ease;
+}
+
+/********** transition 425ms ease **********/
+@mixin transition425 {
+  transition: all 425ms ease;
+}
