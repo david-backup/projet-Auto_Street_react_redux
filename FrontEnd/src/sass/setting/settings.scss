@@ -88,6 +88,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  text-decoration: none;
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
@@ -109,7 +110,14 @@ section {
   display: block;
 }
 body {
-  background: url(./assets/img/gradient.png) no-repeat center/cover;
+  // background: radial-gradient(#006c67, #003844);
+  background: radial-gradient(#6096ba, #274c77);
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#root {
   line-height: 1;
   display: flex;
   flex-direction: column;
