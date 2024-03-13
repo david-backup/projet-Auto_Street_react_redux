@@ -2,5 +2,6 @@
 @use "./sass/setting/typography";
 @use "./sass/utils/mixins";
 @use "./sass/utils/variables";
+@use "./sass/pages/homePage";
 @use "./sass/components/button";
-@use "./sass/components/navigation";
+@use "./sass/layout/header";

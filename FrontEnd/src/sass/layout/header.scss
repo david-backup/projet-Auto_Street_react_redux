@@ -1,0 +1,31 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+.header {
+  width: 100%;
+
+  &_title {
+    max-width: 100%;
+    width: 1600px;
+    margin: 20px auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      @include montserrat;
+      font-size: 2em;
+      font-weight: 500;
+    }
+    .avis-google {
+      border: 2px solid $background_color;
+    }
+  }
+
+  .navigation {
+    width: 100%;
+    height: 50px;
+    background-color: $primary100_color;
+  }
+}
