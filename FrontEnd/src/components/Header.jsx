@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
@@ -14,11 +15,7 @@ const Header = () => {
           Voir les avis clients
         </Link>
       </div>
-      <nav className="navigation">
-        <div className="navigation_content">
-          
-        </div>
-      </nav>
+      <Navigation />
     </header>
   );
 };
