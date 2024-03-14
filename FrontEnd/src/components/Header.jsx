@@ -15,7 +15,9 @@ const Header = () => {
         </Link>
       </div>
       <nav className="navigation">
-        <div className="navigation_content"></div>
+        <div className="navigation_content">
+          
+        </div>
       </nav>
     </header>
   );
