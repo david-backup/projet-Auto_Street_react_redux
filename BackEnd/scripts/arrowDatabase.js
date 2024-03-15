@@ -20,45 +20,31 @@ mongoose
   .catch((error) => console.error("Erreur de connexion à MongoDB :", error));
 
 // Modèle de schéma MongoDB pour stocker les données
-const categorieSchema = new mongoose.Schema({
-  id: Number,
-  name: String,
-  prix: String,
-  description: String,
-  année: String,
-  cover: String,
-  pictures: [String],
+const arrowSchema = new mongoose.Schema({
+  id: { type: Number, required: true },
+  picture: { type: String, required: true },
 });
 
-const Categorie = mongoose.model("Categorie", categorieSchema);
+const ArrowImg = mongoose.model("Arrow", arrowSchema);
 
-const categories = [
+const arrow = [
   {
-    id: 1,
-    name: "peugeot 206 hdi",
-    prix: "5500 €",
-    description: "Véhicule avec courroie de distribution faite à 80000km",
-    année: "janvier 2010",
-    cover: "./FrontEnd/src/assets/img/moteur_1.jpg",
-    pictures: [
-      "./FrontEnd/src/assets/img/moteur_2.jpg",
-      "./FrontEnd/src/assets/img/moteur_3.jpg",
-      "./FrontEnd/src/assets/img/moteur_4.jpg",
-    ],
+    id: 0,
+    picture: "../FrontEnd/src/assets/img/arrow_right.webp",
   },
   {
-    id: 2,
-    name: "Carosserie",
+    id: 1,
+    picture: "../FrontEnd/src/assets/img/arrow_left.webp",
   },
 ];
 
 // Fonction pour enregistrer les catégories dans la base de données MongoDB
 async function saveCategoriesToDB() {
-  for (const categorie of categories) {
+  for (const item of arrow) {
     try {
-      const newCategorie = new Categorie(categorie);
-      await newCategorie.save();
-      console.log("Catégorie enregistrée avec succès :", newCategorie);
+      const newArrow = new ArrowImg(item);
+      await newArrow.save();
+      console.log("Catégorie enregistrée avec succès :", newArrow);
     } catch (error) {
       console.error("Erreur lors de l'enregistrement de la catégorie :", error);
     }
